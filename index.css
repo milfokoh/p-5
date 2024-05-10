@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    background-color: white;
+    border: 1px solid rgba(81, 79, 79, 0.1);
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+header::first-letter {
+    color: red;
+}
+
+main {     
+    margin: 0.25% 0.25%; 
+    padding-top: 20vh;
+    height: 50vh;
+}
+
+.name-cats {       
+    color: rgb(55, 55, 55);
+    font-size: 18px;
+    padding: 5% 3%; 
+}
+
+[href] {
+    color: #4c4cd8;
+    text-decoration: none;
+}
+
+.footer {  
+	left: 0;
+	bottom: 0;
+    position: fixed;
+	width: 100%;
+	height: 80px;
+    padding: 5px 5px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border: 1px solid rgba(81, 79, 79, 0.1);
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-left::first-line {
+    color: rgb(93, 95, 93);
+}
+  
+.footer-right {
+    float: right;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+.radio-container {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.carousel {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+input {
+    display: none;
+}
+
+section {
+    transition-duration: 1s;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 30%;
+}
+
+.carousel img {
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.7;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.hidden [href^="#info-id-"] {
+    color: rgb(255, 255, 255);    
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+}
+
+aside {
+    padding: 1rem 3rem;
+    background: white;
+    max-width: 1000px;
+    padding-top: 2rem;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+}
+
+.bio-cat {
+    margin-top: 15%;
+}
+
+.image {
+    width: 70%;
+    float: left;
+    padding-right: 2rem;
+
+}
+
+.cat-1:checked ~ .carousel section {
+    left: 35%;
+}
+
+.cat-2:checked ~ .carousel section {
+    left: 5%;
+}
+
+.cat-3:checked ~ .carousel section {
+    left: -25%;
+}
+
+.cat-4:checked ~ .carousel section {
+    left: -55%;
+}
+
+.cat-5:checked ~ .carousel section {
+    left: -85%;
+}
+
+.cat-6:checked ~ .carousel section {
+    left: -115%;
+}
+
+.cat-7:checked ~ .carousel section {
+    left: -145%;
+}
+
+.cat-8:checked ~ .carousel section {
+    left: -175%;
+}
+
+.cat-9:checked ~ .carousel section {
+    left: -205%;
+}
+
+.cat-10:checked ~ .carousel section {
+    left: -235%;
+}
+
+.cat-1:checked ~ .carousel .cat-1 img,
+.cat-2:checked ~ .carousel .cat-2 img,
+.cat-3:checked ~ .carousel .cat-3 img,
+.cat-4:checked ~ .carousel .cat-4 img,
+.cat-5:checked ~ .carousel .cat-5 img,
+.cat-6:checked ~ .carousel .cat-6 img,
+.cat-7:checked ~ .carousel .cat-7 img,
+.cat-8:checked ~ .carousel .cat-8 img,
+.cat-9:checked ~ .carousel .cat-9 img,
+.cat-10:checked ~ .carousel .cat-10 img
+{
+    opacity: 1;
+    width: 100%;
+    box-shadow: -2px 3px 5px -3px black;
+}
+
+.cat-1:checked ~ .carousel .cat-1 .hidden,
+.cat-2:checked ~ .carousel .cat-2 .hidden,
+.cat-3:checked ~ .carousel .cat-3 .hidden,
+.cat-4:checked ~ .carousel .cat-4 .hidden,
+.cat-5:checked ~ .carousel .cat-5 .hidden,
+.cat-6:checked ~ .carousel .cat-6 .hidden,
+.cat-7:checked ~ .carousel .cat-7 .hidden,
+.cat-8:checked ~ .carousel .cat-8 .hidden,
+.cat-9:checked ~ .carousel .cat-9 .hidden,
+.cat-10:checked ~ .carousel .cat-10 .hidden
+{
+    display: block;
+}
+
+.cat-1:checked ~ .carousel .cat-1 .hidden:hover,
+.cat-2:checked ~ .carousel .cat-2 .hidden:hover,
+.cat-3:checked ~ .carousel .cat-3 .hidden:hover,
+.cat-4:checked ~ .carousel .cat-4 .hidden:hover,
+.cat-5:checked ~ .carousel .cat-5 .hidden:hover,
+.cat-6:checked ~ .carousel .cat-6 .hidden:hover,
+.cat-7:checked ~ .carousel .cat-7 .hidden:hover,
+.cat-8:checked ~ .carousel .cat-8 .hidden:hover,
+.cat-9:checked ~ .carousel .cat-9 .hidden:hover,
+.cat-10:checked ~ .carousel .cat-10 .hidden:hover
+{
+    opacity: 1;
+}
+
+[href="#"] {
+    border: none;
+    background: none;   
+    cursor: pointer;
+    float: right;
+    right: 0;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    left: calc(40% - 500px);
+    top: calc(50% - 275px);
+    width: 1000px;
+    height: 500px;
+    z-index: 4000;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.046);
+}
+
+.info:target {
+    display: block;
+    opacity: 1;
+}
+
+.black {
+    display: none;
+}
+
+.info:target ~ .black {
+    z-index: 3500;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
